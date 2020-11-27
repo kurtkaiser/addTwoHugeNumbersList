@@ -12,8 +12,6 @@ ListNode<int> addTwoHugeNumbers(ListNode<int> a, ListNode<int> b) {
     ListNode<int> bTemp = null; 
     aTemp = a;
     bTemp = b;
-    bool aNull = aTemp.next != null;
-    bool bNull = bTemp.next != null;
     
     ListNode<int> aNext = aTemp.next;
    while(aTemp.next != null){
@@ -34,8 +32,8 @@ ListNode<int> addTwoHugeNumbers(ListNode<int> a, ListNode<int> b) {
     bTemp.next = aPrev;
   
     // Result
-    ListNode<int> result;// = new ListNode<int>();
-    ListNode<int> pr = null;//new ListNode<int>();
+    ListNode<int> result;
+    ListNode<int> pr = null;
     int add = 0;
     while(aTemp.next != null && bTemp.next != null){
            ListNode<int> r = new ListNode<int>();
