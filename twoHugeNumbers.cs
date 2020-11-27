@@ -61,6 +61,7 @@ ListNode<int> addTwoHugeNumbers(ListNode<int> a, ListNode<int> b) {
     result.next = pr;
     pr = result;
     
+    // Clean up the loops, make a method instead of repeating for each list
     while(aTemp.next != null){
         aTemp = aTemp.next;
         ListNode<int> r = new ListNode<int>();
